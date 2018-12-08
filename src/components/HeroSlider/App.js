@@ -2,6 +2,30 @@ import React, {Component} from 'react';
 
 class HeroSlider extends Component
 {
+    constructor(props)
+    {
+        super(props);
+
+        this.state =
+        {
+            slides:
+            [
+                {
+                    title: '',
+                    sub_title: '',
+                    text: '',
+                    link: '',
+                    link_text: '',
+                    preview_title: '',
+                    main_image: '',
+                    preview_image: ''
+                }
+            ],
+            activeSlide: 0
+        }
+    }
+
+
     render()
     {
         return (

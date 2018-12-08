@@ -1,0 +1,231 @@
+{
+    "header":
+    {
+        "logo": "images/bissell-logo.png",
+
+        "languages":
+        [
+            {
+                "title": "English",
+                "link": "en"
+            },
+            {
+                "title": "French",
+                "link": "fr"
+            },
+            {
+                "title": "Español",
+                "link": "es"
+            }
+        ],
+
+        "sub_nav":
+        [
+            {
+                "title": "Home",
+                "link": "/"
+            },
+            {
+                "title": "Customer Support",
+                "link": "/customer-support"
+            },
+            {
+                "title": "About Us",
+                "link": "/about-us"
+            }
+        ],
+
+        "main_nav":
+        [
+            {
+                "title": "Products",
+                "link": "/products",
+                "sub_nav":
+                [
+                    {
+                        "title": "Vacuums",
+                        "link": "/products/vacuums",
+                        "image": "images/menu-products/vacuum.png"
+                    },
+                    {
+                        "title": "Deep Cleaners",
+                        "link": "/products/deep-cleaners",
+                        "image": "images/menu-products/deep-cleaner.png",
+                        "sub_nav":
+                        [
+                            {
+                                "title": "Uprights",
+                                "link": "/products/deep-cleaners/uprights",
+                                "image": "images/menu-products/deep-cleaner.png"
+                            },
+                            {
+                                "title": "Canister",
+                                "link": "/products/deep-cleaners/canister",
+                                "image": "images/menu-products/canister.png"
+                            },
+                            {
+                                "title": "Compacts",
+                                "link": "/products/deep-cleaners/compacts",
+                                "image": "images/menu-products/compacts.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Mops Brooms & Brushes",
+                        "link": "/products/mops-brooms-brushes",
+                        "image": "images/menu-products/broom.png"
+                    },
+                    {
+                        "title": "Hard Surface Cleaners",
+                        "link": "/products/hard-surface-cleaners",
+                        "image": "images/menu-products/hardfloorcleaner.png"
+                    },
+                    {
+                        "title": "Cleaning Formulas",
+                        "link": "/products/cleaning-formulas",
+                        "image": "images/menu-products/formulas.png"
+                    },
+                    {
+                        "title": "Sweepers",
+                        "link": "/products/sweepers",
+                        "image": "images/menu-products/sweepers.png"
+                    },
+                    {
+                        "title": "Accessories",
+                        "link": "/products/accessories",
+                        "image": "images/menu-products/accessories.png"
+                    }
+                ]
+            },
+            {
+                "title": "Find the Perfect Match",
+                "link": "/find-the-perfect-match",
+                "sub_nav":
+                [
+                    {
+                        "title": "Vacuums",
+                        "link": "/find-the-perfect-match/vacuums",
+                        "image": "images/menu-products/vacuum.png"
+                    },
+                    {
+                        "title": "Deep Cleaners",
+                        "link": "/find-the-perfect-match/deep-cleaners",
+                        "image": "images/menu-products/deep-cleaner.png",
+                    },
+                    {
+                        "title": "Mops Brooms & Brushes",
+                        "link": "/find-the-perfect-match/mops-brooms-brushes",
+                        "image": "images/menu-products/broom.png"
+                    },
+                    {
+                        "title": "Hard Surface Cleaners",
+                        "link": "/find-the-perfect-match/hard-surface-cleaners",
+                        "image": "images/menu-products/hardfloorcleaner.png"
+                    },
+                ]
+            },
+            {
+                "title": "Parts & Accessories",
+                "link": "/parts-accessories",
+                "sub_nav":
+                [
+                    {
+                        "title": "Accessories",
+                        "link": "/parts-accessories/accessories",
+                        "image": "images/menu-products/accessories.png"
+                    }
+                ]
+            }
+        ],
+        "user_nav":
+        [
+
+        ]
+    },
+
+    "footer":
+    {
+
+    },
+
+    "pages":
+    {
+        "landing":
+        {
+            "hero_slider":
+            {
+                "slides":
+                [
+                    {
+                        "title": "Earth Friendly Products",
+                        "sub_title": "Our Vacuums Use Less Energy & Resources",
+                        "text": "Proin dui nibh, luctus eu facilisis lacinia, venenatis eget erat no cobius",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "link_text": "Learn More",
+                        "preview_title": "<span>Earth Friendly</span> Vacuum Cleaners",
+                        "main_image": "images/slider/earth-friendly-products.jpg"
+                    },
+                    {
+                        "title": "The SpotBot Proheat",
+                        "sub_title": "Featured Product",
+                        "text": "Proin dui nibh, luctus eu facilisis lacinia, venenatis eget erat no cobius",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "link_text": "Learn more",
+                        "preview_title": "<span>The SpotBot</span> Proheat",
+                        "main_image": "images/slider/spot-bot-proheat-bg.jpg"
+                    }
+                ]
+            },
+            "callout_cards":
+            [
+                {
+                    "title": "<span>Find a</span> Perfect Match",
+                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                    "card_type": "image",
+                    "image": "images/callouts/perfect-match.jpg"
+                },
+                {
+                    "title": "<span>Pet Lovers</span> Love Bissel",
+                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                    "card_type": "image",
+                    "image": "images/callouts/pet-lovers.jpg"
+                },
+                {
+                    "title": "<span>Get</span> Help",
+                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                    "card_type": "list",
+                    "list":
+                    [
+                        {
+                            "title": "Technical Support",
+                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                        },
+                        {
+                            "title": "User Guides",
+                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                        },
+                        {
+                            "title": "Troubleshooting",
+                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                        },
+                        {
+                            "title": "Register Product",
+                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                        }
+                    ]
+                },
+                {
+                    "title": "<span>Share</span> & Discuss",
+                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                    "card_type": "preview",
+                    "preview":
+                    {
+                        "image": "images/callouts/dogs.jpg",
+                        "title": "MrSparkle:",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing pendisse..."
+                    }
+                }
+            ]
+        }
+    }
+}
