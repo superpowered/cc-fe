@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import HeaderMain from './HeaderMain/HeaderMain';
-import HeaderSub from './HeaderSub/HeaderSub';
+import HeaderUtility from './HeaderUtility/HeaderUtility';
 
 class AppHeader extends Component
 {
@@ -9,8 +9,8 @@ class AppHeader extends Component
     {
         return (
             <header className="app-header">
-                <HeaderSub
-                    sub_nav={this.props.header_data.sub_nav}
+                <HeaderUtility
+                    utility_nav={this.props.header_data.utility_nav}
                     languages={this.props.header_data.languages}
                 />
                 <HeaderMain

@@ -20,7 +20,7 @@
             }
         ],
 
-        "sub_nav": [
+        "utility_nav": [
             {
                 "title": "Home",
                 "link": "/"
