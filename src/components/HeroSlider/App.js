@@ -9,25 +9,85 @@ class HeroSlider extends Component
 
                 <div className="hero-slider">
 
-                    <div className="hero-slide">
+                    <nav className="hero-slider-nav">
 
-                        <div className="background">
+                        <button className="hero-slider-arrow prev">
+                            Prev
+                        </button>
+
+                        <ul className="hero-slider-dots">
+                            <li>
+                                <button>
+                                    1
+                                </button>
+                                <div className="slide-preview">
+                                    <h3 className="title">
+                                        <span>
+                                            Earth Friendly
+                                        </span>
+                                        Vacuum Cleaners
+                                    </h3>
+                                    <div className="image">
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button>
+                                    2
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    3
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    4
+                                </button>
+                            </li>
+                        </ul>
+
+                        <button className="hero-slider-arrow next">
+                            Next
+                        </button>
+
+                    </nav>
+
+                    <div className="slider-track">
+
+                        <div className="hero-slide">
+
+                            <div className="background">
+
+                            </div>
+
+                            <div className="wrapper">
+
+                                <h4>
+                                    Our Vacuums Use Energy & Resources
+                                </h4>
+                                <h1>
+                                    Earth Friendly Products
+                                </h1>
+                                <div>
+                                    Proin dui nibh, luctus eu facilisis lacinia, venenatis eget erat no cobius.
+                                </div>
+                                <a className="button">
+                                    Learn More
+                                </a>
+                            </div>
 
                         </div>
 
-                        <div className="wrapper">
-
-
+                        <div className="hero-slide">
 
                         </div>
 
-                    </div>
+                        <div className="hero-slide">
 
-                    <div className="hero-slide">
-
-                    </div>
-
-                    <div className="hero-slide">
+                        </div>
 
                     </div>
 
