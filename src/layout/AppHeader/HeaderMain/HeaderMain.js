@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import HeaderMainNav from './HeaderMainNav';
+
 class HeaderMain extends Component
 {
     render()
@@ -9,33 +11,9 @@ class HeaderMain extends Component
             <header className="app-main-head">
 
                 <div className="wrapper">
-                    <img className="site-logo" />
+                    <img className="site-logo" src={this.props.logo} />
 
-                    <nav className="sub-head-nav">
-                        <ul>
-                            <li>
-                                <a>
-                                    Products
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a>
-                                            <img src="#" />
-                                            Deep Cleaners
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <a>
-                                                    <img src="#" />
-                                                    Uprights
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                    <HeaderMainNav nav_links={this.props.main_nav} />
 
                     <div className="where-to-buy-block">
 

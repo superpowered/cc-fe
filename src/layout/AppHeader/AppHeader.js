@@ -9,8 +9,14 @@ class AppHeader extends Component
     {
         return (
             <header className="app-header">
-                <HeaderMain />
-                <HeaderSub />
+                <HeaderSub
+                    sub_nav={this.props.header_data.sub_nav}
+                    languages={this.props.header_data.languages}
+                />
+                <HeaderMain
+                    logo={this.props.header_data.logo}
+                    main_nav={this.props.header_data.main_nav}
+                />
             </header>
         );
     }

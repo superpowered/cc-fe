@@ -1,26 +1,26 @@
 {
-    "header":
-    {
+    "header": {
         "logo": "images/bissell-logo.png",
 
-        "languages":
-        [
+        "languages": [
             {
                 "title": "English",
-                "link": "en"
+                "link": "en",
+                "image": "images/eng-icon.png"
             },
             {
                 "title": "French",
-                "link": "fr"
+                "link": "fr",
+                "image": "images/eng-icon.png"
             },
             {
                 "title": "Español",
-                "link": "es"
+                "link": "es",
+                "image": "images/eng-icon.png"
             }
         ],
 
-        "sub_nav":
-        [
+        "sub_nav": [
             {
                 "title": "Home",
                 "link": "/"
@@ -35,13 +35,11 @@
             }
         ],
 
-        "main_nav":
-        [
+        "main_nav": [
             {
                 "title": "Products",
                 "link": "/products",
-                "sub_nav":
-                [
+                "sub_nav": [
                     {
                         "title": "Vacuums",
                         "link": "/products/vacuums",
@@ -51,8 +49,7 @@
                         "title": "Deep Cleaners",
                         "link": "/products/deep-cleaners",
                         "image": "images/menu-products/deep-cleaner.png",
-                        "sub_nav":
-                        [
+                        "sub_nav": [
                             {
                                 "title": "Uprights",
                                 "link": "/products/deep-cleaners/uprights",
@@ -100,8 +97,7 @@
             {
                 "title": "Find the Perfect Match",
                 "link": "/find-the-perfect-match",
-                "sub_nav":
-                [
+                "sub_nav": [
                     {
                         "title": "Vacuums",
                         "link": "/find-the-perfect-match/vacuums",
@@ -110,7 +106,7 @@
                     {
                         "title": "Deep Cleaners",
                         "link": "/find-the-perfect-match/deep-cleaners",
-                        "image": "images/menu-products/deep-cleaner.png",
+                        "image": "images/menu-products/deep-cleaner.png"
                     },
                     {
                         "title": "Mops Brooms & Brushes",
@@ -121,14 +117,13 @@
                         "title": "Hard Surface Cleaners",
                         "link": "/find-the-perfect-match/hard-surface-cleaners",
                         "image": "images/menu-products/hardfloorcleaner.png"
-                    },
+                    }
                 ]
             },
             {
                 "title": "Parts & Accessories",
                 "link": "/parts-accessories",
-                "sub_nav":
-                [
+                "sub_nav": [
                     {
                         "title": "Accessories",
                         "link": "/parts-accessories/accessories",
@@ -137,25 +132,19 @@
                 ]
             }
         ],
-        "user_nav":
-        [
+        "user_nav": [
 
         ]
     },
 
-    "footer":
-    {
+    "footer": {
 
     },
 
-    "pages":
-    {
-        "landing":
-        {
-            "hero_slider":
-            {
-                "slides":
-                [
+    "pages": {
+        "landing": {
+            "hero_slider": {
+                "slides": [
                     {
                         "title": "Earth Friendly Products",
                         "sub_title": "Our Vacuums Use Less Energy & Resources",
@@ -176,8 +165,7 @@
                     }
                 ]
             },
-            "callout_cards":
-            [
+            "callout_cards": [
                 {
                     "title": "<span>Find a</span> Perfect Match",
                     "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
@@ -194,8 +182,7 @@
                     "title": "<span>Get</span> Help",
                     "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
                     "card_type": "list",
-                    "list":
-                    [
+                    "list": [
                         {
                             "title": "Technical Support",
                             "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
