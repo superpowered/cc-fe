@@ -163,56 +163,56 @@
                         "preview_title": "<span>The SpotBot</span> Proheat",
                         "main_image": "images/slider/spot-bot-proheat-bg.jpg"
                     }
-                ]
-            },
-            "callout_cards": [
-                {
-                    "title": "<span>Find a</span> Perfect Match",
-                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
-                    "card_type": "image",
-                    "image": "images/callouts/perfect-match.jpg"
-                },
-                {
-                    "title": "<span>Pet Lovers</span> Love Bissel",
-                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
-                    "card_type": "image",
-                    "image": "images/callouts/pet-lovers.jpg"
-                },
-                {
-                    "title": "<span>Get</span> Help",
-                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
-                    "card_type": "list",
-                    "list": [
-                        {
-                            "title": "Technical Support",
-                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
-                        },
-                        {
-                            "title": "User Guides",
-                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
-                        },
-                        {
-                            "title": "Troubleshooting",
-                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
-                        },
-                        {
-                            "title": "Register Product",
-                            "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
-                        }
-                    ]
-                },
-                {
-                    "title": "<span>Share</span> & Discuss",
-                    "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
-                    "card_type": "preview",
-                    "preview":
+                ],
+                "callout_cards": [
                     {
-                        "image": "images/callouts/dogs.jpg",
-                        "title": "MrSparkle:",
-                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing pendisse..."
+                        "title": "<span>Find a</span> Perfect Match",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "card_type": "image",
+                        "image": "images/callouts/perfect-match.jpg"
+                    },
+                    {
+                        "title": "<span>Pet Lovers</span> Love Bissel",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "card_type": "image",
+                        "image": "images/callouts/pet-lovers.jpg"
+                    },
+                    {
+                        "title": "<span>Get</span> Help",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "card_type": "list",
+                        "list": [
+                            {
+                                "title": "Technical Support",
+                                "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                            },
+                            {
+                                "title": "User Guides",
+                                "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                            },
+                            {
+                                "title": "Troubleshooting",
+                                "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                            },
+                            {
+                                "title": "Register Product",
+                                "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "<span>Share</span> & Discuss",
+                        "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                        "card_type": "preview",
+                        "preview":
+                        {
+                            "image": "images/callouts/dogs.jpg",
+                            "title": "MrSparkle:",
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing pendisse..."
+                        }
                     }
-                }
-            ]
+                ]
+            }
         }
     }
 }
