@@ -3,6 +3,8 @@
 
 .app-header
 {
+    position: relative;
+    z-index: 2;
     @at-root .app-utility-head
     {
         height:2em;

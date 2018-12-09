@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import '../../../../styles/components/hero-slider.css'
+
 import HeroSlide from './HeroSlide';
 
 class HeroSlider extends Component
@@ -23,7 +25,7 @@ class HeroSlider extends Component
             return '';
 
         return (
-            <div className="hero-slider" style={{background:'black'}}>
+            <div className="hero-slider">
 
                 <nav className="hero-slider-nav">
 

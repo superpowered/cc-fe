@@ -469,5 +469,8 @@ hr {
   font-weight: 700;
   font-style: italic;
   font-display: swap; }
+.app-main {
+  position: relative;
+  z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */

@@ -34,9 +34,11 @@ class App extends Component
 
                     <AppHeader header_data={this.state.app_data.header}/>
 
-                    <Landing
-                        page_data={this.state.app_data.pages.landing}
-                    />
+                    <div className="app-main">
+                        <Landing
+                            page_data={this.state.app_data.pages.landing}
+                        />
+                    </div>
 
                 </div>
             );
