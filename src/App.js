@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./App.css";
+import "./styles/main.css";
 
 import app_data from './app_data.json';
 

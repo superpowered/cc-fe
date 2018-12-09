@@ -30,7 +30,7 @@ class HeaderMain extends Component
                         <form className="where-to-buy-form">
 
                             <input type="search" name="zip-search" />
-                            <button type="submit" >
+                            <button className="arrow-button" type="submit" >
                                 <span>Enter ZIP Code</span>
                             </button>
 

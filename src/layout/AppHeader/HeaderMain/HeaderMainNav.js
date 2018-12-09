@@ -6,7 +6,7 @@ class HeaderMainNav extends Component
     render()
     {
         return (
-            <nav className="sub-head-nav">
+            <nav className="main-head-nav">
                 <ul>
                     {this.props.nav_links.map((item, index)=>
                     {

@@ -23,7 +23,7 @@ class HeroSlider extends Component
             return '';
 
         return (
-            <div className="hero-slider">
+            <div className="hero-slider" style={{background:'black'}}>
 
                 <nav className="hero-slider-nav">
 
@@ -44,7 +44,7 @@ class HeroSlider extends Component
                                 }
 
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <button>
                                             {index}
                                         </button>

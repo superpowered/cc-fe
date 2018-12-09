@@ -2,33 +2,35 @@ import React, {Component} from 'react';
 
 class SubNavList extends Component
 {
-    makeSubNavListItem = (item, index) =>
+    makeSubNavItem = (item, index) =>
     {
         if (item.sub_nav)
         {
             return (
-                <li key={index}>
+                <li key={index} className="sub-nav-item has-sub-nav">
                     <a href={item.link}>
-                        {item.title}
                         {
                             item.image &&
                             <img src={item.image} />
                         }
+                        {item.title}
                     </a>
-                    <ul>
-                        {item.sub_nav.map(this.makeSubNavListItem)}
-                    </ul>
+                    <div className="sub-nav">
+                        <ul>
+                            {item.sub_nav.map(this.makeSubNavItem)}
+                        </ul>
+                    </div>
                 </li>
             )
         } else {
             return (
-                <li key={index}>
+                <li key={index} className="sub-nav-item">
                     <a href={item.link}>
-                        {item.title}
                         {
                             item.image &&
                             <img src={item.image} />
                         }
+                        {item.title}
                     </a>
                 </li>
             );
@@ -38,9 +40,11 @@ class SubNavList extends Component
     render()
     {
        return (
-           <ul>
-               {this.props.nav_links.map(this.makeSubNavListItem)}
-           </ul>
+           <div className="sub-nav">
+               <ul>
+                   {this.props.nav_links.map(this.makeSubNavItem)}
+               </ul>
+           </div>
        );
     }
 }
