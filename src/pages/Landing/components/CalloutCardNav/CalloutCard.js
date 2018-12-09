@@ -29,7 +29,7 @@ class CalloutCard extends Component
         {
             cardList = (
                 <ul className="card-link-list">
-                    {card.list.map((item,index)=><li key={index}><a href={item.link}>{item.title}</a></li>)}
+                    {card.list.map((item,index)=><li key={index}><a href={item.link} className="arrow-button"><span>{item.title}</span></a></li>)}
                 </ul>
             );
         }
@@ -41,18 +41,24 @@ class CalloutCard extends Component
                 <div className="card-preview">
                     <img src={card.preview.image} />
                     <div className="preview-text">
-                        {card.preview.text}<a href={card.link}>[more]</a>
+                        <h4>
+                            {card.preview.title}
+                        </h4>
+                        <p>
+                            {card.preview.text} <a href={card.link}>[more]</a>
+                        </p>
                     </div>
                 </div>
             );
         }
 
+        //TODO: sanitization
+
         return (
-            <article className="nav-card">
+            <article className="callout-card">
 
                 <a href={card.link}>
-                    <h3>
-                        {card.title}
+                    <h3 className={card.short_title ? "short-title": ""} dangerouslySetInnerHTML={{__html:card.title}}>
                     </h3>
                 </a>
 

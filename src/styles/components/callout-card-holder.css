@@ -1,0 +1,100 @@
+.callout-card-nav > .wrapper {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 62rem) {
+    .callout-card-nav > .wrapper {
+      margin-left: 1rem;
+      margin-right: 1rem; } }
+  .ua-ie-9 .callout-card-nav > .wrapper:before, .ua-ie-8 .callout-card-nav > .wrapper:before, .ua-ie-9 .callout-card-nav > .wrapper:after, .ua-ie-8 .callout-card-nav > .wrapper:after {
+    content: " ";
+    display: table; }
+  .ua-ie-9 .callout-card-nav > .wrapper:after, .ua-ie-8 .callout-card-nav > .wrapper:after {
+    clear: both; }
+  .callout-card-nav > .wrapper > * {
+    float: left; }
+.callout-card {
+  width: 10em;
+  padding: .75em;
+  background-color: #ffffff;
+  margin: 1em; }
+  .callout-card h3 {
+    font-size: .875em;
+    text-transform: uppercase;
+    line-height: 1.25;
+    margin-bottom: .25em; }
+    .callout-card h3 span {
+      color: #e62126;
+      display: block; }
+    .callout-card h3.short-title {
+      padding-bottom: .25em;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: .5em; }
+      .callout-card h3.short-title span {
+        display: inline-block; }
+  .callout-card .card-image {
+    position: relative;
+    background-size: cover;
+    background-position: center; }
+    .callout-card .card-image:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 53.33333%; }
+    .callout-card .card-image > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .callout-card .card-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      object-fit: cover; }
+  .callout-card .card-link-list {
+    font-family: "Trebuchet", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+    .callout-card .card-link-list li a {
+      font-size: .875em;
+      font-weight: bold;
+      color: #707070; }
+  .callout-card .card-preview {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start;
+    font-family: "Trebuchet", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+    .ua-ie-9 .callout-card .card-preview:before, .ua-ie-8 .callout-card .card-preview:before, .ua-ie-9 .callout-card .card-preview:after, .ua-ie-8 .callout-card .card-preview:after {
+      content: " ";
+      display: table; }
+    .ua-ie-9 .callout-card .card-preview:after, .ua-ie-8 .callout-card .card-preview:after {
+      clear: both; }
+    .callout-card .card-preview > * {
+      float: left; }
+    .callout-card .card-preview img {
+      margin-right: .25em; }
+    .callout-card .card-preview .preview-text h4 {
+      font-size: .875em;
+      margin-bottom: .5em; }
+    .callout-card .card-preview .preview-text p {
+      color: #707070;
+      font-size: .625em;
+      line-height: 1.25;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto; }
+      .callout-card .card-preview .preview-text p a {
+        color: #e62126; }
+
+/*# sourceMappingURL=callout-card-holder.css.map */

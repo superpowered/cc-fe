@@ -179,6 +179,7 @@
                     },
                     {
                         "title": "<span>Get</span> Help",
+                        "short_title": true,
                         "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
                         "card_type": "list",
                         "list": [
@@ -202,6 +203,7 @@
                     },
                     {
                         "title": "<span>Share</span> & Discuss",
+                        "short_title": true,
                         "link": "https://www.youtube.com/watch?v=5dsGWM5XGdg",
                         "card_type": "preview",
                         "preview":

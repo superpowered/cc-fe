@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 
+import '../../../../styles/components/callout-card-holder.css'
+
 import CalloutCard from './CalloutCard';
-import HeroSlide from "../HeroSlider/HeroSlide";
 
 class CalloutCardNav extends Component
 {
@@ -12,7 +13,7 @@ class CalloutCardNav extends Component
             return '';
 
         return(
-            <div className="nav-card-holder">
+            <div className="callout-card-nav">
                <div className="wrapper">
 
                    {cards.map((card, index)=> <CalloutCard key={index} card={card}/>)}

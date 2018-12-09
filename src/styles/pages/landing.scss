@@ -1,0 +1,19 @@
+.landing-main
+{
+    position: relative;
+
+    .hero-slider
+    {
+        position: relative;
+        z-index: 1;
+    }
+
+    .callout-card-nav
+    {
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        bottom: 1em;
+        width: 100%;
+    }
+}

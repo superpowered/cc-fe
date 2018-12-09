@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../../../../styles/components/hero-slider.css'
+import '../../../../styles/components/hero-slider.css';
 
 import HeroSlide from './HeroSlide';
 

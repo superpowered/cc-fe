@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import HeroSlider from './components/HeroSlider/HeroSlider';
 import CalloutCardNav from './components/CalloutCardNav/CalloutCardNav';
 
+import '../../styles/pages/landing.css';
+
 class Landing extends Component
 {
     constructor(props)
