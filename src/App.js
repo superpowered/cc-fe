@@ -4,7 +4,8 @@ import "./App.css";
 import app_data from './app_data.json';
 
 import AppHeader from "./layout/AppHeader/AppHeader";
-import HeroSlider from "./components/HeroSlider/App";
+
+import Landing from "./pages/Landing/Landing";
 
 class App extends Component
 {
@@ -33,11 +34,9 @@ class App extends Component
 
                     <AppHeader header_data={this.state.app_data.header}/>
 
-                    <div className="page landing-page">
-
-                        <HeroSlider />
-
-                    </div>
+                    <Landing
+                        page_data={this.state.app_data.pages.landing}
+                    />
 
                 </div>
             );
