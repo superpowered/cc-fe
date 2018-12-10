@@ -8,21 +8,114 @@
     @at-root .app-utility-head
     {
         height:2em;
-        overflow: hidden;
-        background-color: gray;
-        color: transparent;
 
         > .wrapper
         {
             @include page-width-wrapper;
             @include flex();
+            justify-content: flex-end;
         }
+
+        .utility-head-nav
+        {
+            border-right: 1px solid $color_gray_1;
+            ul
+            {
+                height: 100%;
+                @include flex();
+                align-items: center;
+                li
+                {
+                    margin-right: 1em;
+                    a
+                    {
+                        display: block;
+                        font-size: .625em;
+                        color: $color_gray_3;
+                    }
+                }
+            }
+        }
+
+        .language-chooser
+        {
+            position: relative;
+            margin-left: .75em;
+            .active-language
+            {
+
+            }
+
+            .language
+            {
+                @include flex();
+                align-items: center;
+                font-size: .625em;
+                color: $color_gray_2;
+
+                img
+                {
+
+                }
+
+                &:after
+                {
+                    content: '';
+                    display: inline-block;
+                    height: 0;
+                    width: 0;
+                    border-top: 3px solid $color_gray_2;
+                    border-left: 2px solid transparent;
+                    border-right: 2px solid transparent;
+                    margin-left: .45em;
+                }
+            }
+
+            ul
+            {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: none;
+                li
+                {
+
+                }
+            }
+        }
+
+        .newsletter-signup
+        {
+            @include flex();
+            align-items: center;
+            margin-left: 1em;
+
+            input
+            {
+                border: 2px solid $color_gray_2;
+                font-size: .625em;
+                padding: .35em 1em .25em 2em;
+                height: auto;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                min-width: 18em;
+                font-family: $font_2;
+            }
+            .arrow-button
+            {
+
+            }
+        }
+
     }
 
     @at-root .app-main-head
     {
         background-color: $color_white_1;
         position: relative;
+        border-bottom: 1px solid $color_gray_1;
         > .wrapper
         {
             @include page-width-wrapper;

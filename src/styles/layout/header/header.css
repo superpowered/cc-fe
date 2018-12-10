@@ -2,10 +2,7 @@
   position: relative;
   z-index: 2; }
   .app-utility-head {
-    height: 2em;
-    overflow: hidden;
-    background-color: gray;
-    color: transparent; }
+    height: 2em; }
     .app-utility-head > .wrapper {
       width: 100%;
       max-width: 60rem;
@@ -13,7 +10,8 @@
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      justify-content: flex-end; }
       @media (max-width: 62rem) {
         .app-utility-head > .wrapper {
           margin-left: 1rem;
@@ -25,9 +23,89 @@
         clear: both; }
       .app-utility-head > .wrapper > * {
         float: left; }
+    .app-utility-head .utility-head-nav {
+      border-right: 1px solid #cccccc; }
+      .app-utility-head .utility-head-nav ul {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center; }
+        .ua-ie-9 .app-utility-head .utility-head-nav ul:before, .ua-ie-8 .app-utility-head .utility-head-nav ul:before, .ua-ie-9 .app-utility-head .utility-head-nav ul:after, .ua-ie-8 .app-utility-head .utility-head-nav ul:after {
+          content: " ";
+          display: table; }
+        .ua-ie-9 .app-utility-head .utility-head-nav ul:after, .ua-ie-8 .app-utility-head .utility-head-nav ul:after {
+          clear: both; }
+        .app-utility-head .utility-head-nav ul > * {
+          float: left; }
+        .app-utility-head .utility-head-nav ul li {
+          margin-right: 1em; }
+          .app-utility-head .utility-head-nav ul li a {
+            display: block;
+            font-size: .625em;
+            color: #707070; }
+    .app-utility-head .language-chooser {
+      position: relative;
+      margin-left: .75em; }
+      .app-utility-head .language-chooser .language {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        font-size: .625em;
+        color: #898989; }
+        .ua-ie-9 .app-utility-head .language-chooser .language:before, .ua-ie-8 .app-utility-head .language-chooser .language:before, .ua-ie-9 .app-utility-head .language-chooser .language:after, .ua-ie-8 .app-utility-head .language-chooser .language:after {
+          content: " ";
+          display: table; }
+        .ua-ie-9 .app-utility-head .language-chooser .language:after, .ua-ie-8 .app-utility-head .language-chooser .language:after {
+          clear: both; }
+        .app-utility-head .language-chooser .language > * {
+          float: left; }
+        .app-utility-head .language-chooser .language:after {
+          content: '';
+          display: inline-block;
+          height: 0;
+          width: 0;
+          border-top: 3px solid #898989;
+          border-left: 2px solid transparent;
+          border-right: 2px solid transparent;
+          margin-left: .45em; }
+      .app-utility-head .language-chooser ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none; }
+    .app-utility-head .newsletter-signup {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      margin-left: 1em; }
+      .ua-ie-9 .app-utility-head .newsletter-signup:before, .ua-ie-8 .app-utility-head .newsletter-signup:before, .ua-ie-9 .app-utility-head .newsletter-signup:after, .ua-ie-8 .app-utility-head .newsletter-signup:after {
+        content: " ";
+        display: table; }
+      .ua-ie-9 .app-utility-head .newsletter-signup:after, .ua-ie-8 .app-utility-head .newsletter-signup:after {
+        clear: both; }
+      .app-utility-head .newsletter-signup > * {
+        float: left; }
+      .app-utility-head .newsletter-signup input {
+        border: 2px solid #898989;
+        font-size: .625em;
+        padding: .35em 1em .25em 2em;
+        height: auto;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        min-width: 18em;
+        font-family: "Trebuchet", "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
   .app-main-head {
     background-color: #ffffff;
-    position: relative; }
+    position: relative;
+    border-bottom: 1px solid #cccccc; }
     .app-main-head > .wrapper {
       width: 100%;
       max-width: 60rem;

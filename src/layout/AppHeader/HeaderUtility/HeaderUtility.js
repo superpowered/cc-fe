@@ -23,25 +23,33 @@ class HeaderUtility extends Component
                         </ul>
                     </nav>
 
-                    <ul className="utility-head-language-chooser">
-                        {
-                            this.props.languages.map((item, index)=>
+                    <div className="language-chooser">
+                        <div className="active-language">
+                            <div className="language">
+                                <img src={this.props.languages[0].image} />
+                                {this.props.languages[0].title}
+                            </div>
+                        </div>
+                        <ul>
                             {
-                                return (
-                                    <li key={index}>
-                                        <a href={item.link}>
-                                            <img src={item.image} />
-                                            {item.title}
-                                        </a>
-                                    </li>
-                                );
-                            })
-                        }
-                    </ul>
+                                this.props.languages.map((item, index)=>
+                                {
+                                    return (
+                                        <li key={index}>
+                                            <a className="language" href={item.link}>
+                                                <img src={item.image} />
+                                                {item.title}
+                                            </a>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>
+                    </div>
 
-                    <form className="utility-head-newsletter-signup" method="POST" action="/">
+                    <form className="newsletter-signup" method="POST" action="/">
                         <input type="email" placeholder="Enter Your E-mail Address" name="email" />
-                        <button type="submit" >Submit</button>
+                        <button className="arrow-button" type="submit" title="submit"></button>
                     </form>
 
                 </div>
