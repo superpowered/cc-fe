@@ -1,5 +1,5 @@
-@import "../../variables";
-@import "../../mixins";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .app-footer
 {
@@ -66,21 +66,13 @@
         {
             ul
             {
-                @include flex();
                 li
                 {
-                    margin-right: 1em;
                     a
                     {
-                        display: block;
                         font-size: .625em;
                         font-weight: bold;
                         color: $color_gray_2;
-                    }
-
-                    ul
-                    {
-                        display: none;
                     }
                 }
             }
@@ -90,12 +82,11 @@
         {
             ul
             {
-                @include flex();
                 li
                 {
                     padding: 0 .5em;
                     border-right: 1px solid $color_1;
-
+                    margin-right: 0;
                     &:last-of-type
                     {
                         border-right: 0;
@@ -104,14 +95,8 @@
 
                     a
                     {
-                        display: block;
                         font-size: .625em;
                         color: $color_1;
-                    }
-
-                    ul
-                    {
-                        display: none;
                     }
                 }
             }

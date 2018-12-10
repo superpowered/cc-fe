@@ -1,0 +1,23 @@
+.nav-list ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+  .ua-ie-9 .nav-list ul:before, .ua-ie-8 .nav-list ul:before, .ua-ie-9 .nav-list ul:after, .ua-ie-8 .nav-list ul:after {
+    content: " ";
+    display: table; }
+  .ua-ie-9 .nav-list ul:after, .ua-ie-8 .nav-list ul:after {
+    clear: both; }
+  .nav-list ul > * {
+    float: left; }
+  .nav-list ul li {
+    margin-right: 1em; }
+    .nav-list ul li:last-of-type {
+      margin-right: 0; }
+    .nav-list ul li a {
+      display: block; }
+    .nav-list ul li ul {
+      display: none; }
+
+/*# sourceMappingURL=NavList.css.map */

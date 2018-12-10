@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.nav-list
+{
+    ul
+    {
+        @include flex();
+        align-items: center;
+
+        li
+        {
+            margin-right: 1em;
+
+            &:last-of-type
+            {
+                margin-right: 0;
+            }
+
+            a
+            {
+                display: block;
+            }
+
+            ul
+            {
+                display: none;
+            }
+        }
+    }
+}

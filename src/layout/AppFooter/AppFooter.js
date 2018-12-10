@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 
-import "../../styles/layout/footer/footer.css";
+import "./AppFooter.css";
 
 import SocialBlock from "./SocialBlock/SocialBlock";
+import NavList from '../../shared/NavList/NavList';
 
 class AppFooter extends Component
 {
@@ -41,56 +42,15 @@ class AppFooter extends Component
 
                     <div className="footer-bottom">
 
-                        <nav className="footer-nav">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Products
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Products
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Products
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <NavList
+                            className="footer-nav"
+                            navItems={this.props.footer_data.footer_main_nav}
+                        />
 
-
-                        <nav className="footer-secondary-nav">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Site Security
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <NavList
+                            className="footer-secondary-nav"
+                            navItems={this.props.footer_data.footer_secondary_nav}
+                        />
 
                         <div className="copyright">
                             © 2009 BISSELL Homecare Inc. All Rights Reserved
