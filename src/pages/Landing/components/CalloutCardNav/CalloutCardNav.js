@@ -27,6 +27,7 @@ class CalloutCardNav extends Component
                                     list={card.list}
                                     preview={card.preview}
                                     link={card.link}
+                                    short_title={card.short_title}
                                />
                            );
                        })

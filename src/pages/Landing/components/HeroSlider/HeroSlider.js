@@ -30,35 +30,37 @@ class HeroSlider extends Component
 
                 <nav className="hero-slider-nav">
 
-                    <button className="hero-slider-arrow prev">
-                        Prev
-                    </button>
+                    <div className="wrapper">
+                        <button className="hero-slider-arrow prev">
+                            Prev
+                        </button>
 
-                    <ul className="hero-slider-dots">
+                        <ul className="hero-slider-dots">
 
-                        {
-                            slides.map((slide, index)=>
                             {
-                                return (
-                                    <li key={index}>
-                                        <button>
-                                            {index}
-                                        </button>
+                                slides.map((slide, index)=>
+                                {
+                                    return (
+                                        <li key={index}>
+                                            <button>
+                                                {index}
+                                            </button>
 
-                                        <CalloutCard
-                                            title={slide.title}
-                                            image={slide.main_image}
-                                        />
+                                            <CalloutCard
+                                                title={slide.preview_title}
+                                                image={slide.main_image}
+                                            />
 
-                                    </li>
-                                );
-                            })
-                        }
-                    </ul>
+                                        </li>
+                                    );
+                                })
+                            }
+                        </ul>
 
-                    <button className="hero-slider-arrow next">
-                        Next
-                    </button>
+                        <button className="hero-slider-arrow next">
+                            Next
+                        </button>
+                    </div>
 
                 </nav>
 

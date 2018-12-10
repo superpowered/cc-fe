@@ -4,8 +4,87 @@
   .hero-slider .hero-slider-nav {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
+    width: 100%;
     z-index: 2; }
+    .hero-slider .hero-slider-nav > .wrapper {
+      width: 100%;
+      max-width: 60rem;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: flex-end; }
+      @media (max-width: 62rem) {
+        .hero-slider .hero-slider-nav > .wrapper {
+          margin-left: 1rem;
+          margin-right: 1rem; } }
+      .ua-ie-9 .hero-slider .hero-slider-nav > .wrapper:before, .ua-ie-8 .hero-slider .hero-slider-nav > .wrapper:before, .ua-ie-9 .hero-slider .hero-slider-nav > .wrapper:after, .ua-ie-8 .hero-slider .hero-slider-nav > .wrapper:after {
+        content: " ";
+        display: table; }
+      .ua-ie-9 .hero-slider .hero-slider-nav > .wrapper:after, .ua-ie-8 .hero-slider .hero-slider-nav > .wrapper:after {
+        clear: both; }
+      .hero-slider .hero-slider-nav > .wrapper > * {
+        float: left; }
+    .hero-slider .hero-slider-nav .hero-slider-dots {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .ua-ie-9 .hero-slider .hero-slider-nav .hero-slider-dots:before, .ua-ie-8 .hero-slider .hero-slider-nav .hero-slider-dots:before, .ua-ie-9 .hero-slider .hero-slider-nav .hero-slider-dots:after, .ua-ie-8 .hero-slider .hero-slider-nav .hero-slider-dots:after {
+        content: " ";
+        display: table; }
+      .ua-ie-9 .hero-slider .hero-slider-nav .hero-slider-dots:after, .ua-ie-8 .hero-slider .hero-slider-nav .hero-slider-dots:after {
+        clear: both; }
+      .hero-slider .hero-slider-nav .hero-slider-dots > * {
+        float: left; }
+      .hero-slider .hero-slider-nav .hero-slider-dots li {
+        position: relative; }
+        .hero-slider .hero-slider-nav .hero-slider-dots li.active button {
+          background-color: #e62126; }
+        .hero-slider .hero-slider-nav .hero-slider-dots li:hover .callout-card {
+          opacity: 1;
+          transform: translate(-50%, 0); }
+        .hero-slider .hero-slider-nav .hero-slider-dots li button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: 0;
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+          background: none;
+          color: transparent;
+          background-color: #ffffff;
+          height: .65em;
+          width: .65em;
+          overflow: hidden;
+          border-radius: 100%;
+          margin: .25em;
+          display: block;
+          border: none; }
+        .hero-slider .hero-slider-nav .hero-slider-dots li .callout-card {
+          position: absolute;
+          top: 100%;
+          transform: translate(-50%, -1em);
+          left: 0;
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-in-out 0s;
+          -moz-transition: all 0.3s ease-in-out 0s;
+          -o-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s; }
+          .hero-slider .hero-slider-nav .hero-slider-dots li .callout-card:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: calc(50% - 3px);
+            top: -6px;
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #ffffff; }
   .hero-slider .slider-track {
     position: relative;
     z-index: 1; }
