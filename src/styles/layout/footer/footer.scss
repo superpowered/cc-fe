@@ -52,34 +52,6 @@
         .social-blocks
         {
             @include flex();
-            .social-block
-            {
-                @include flex();
-                padding: 0 1em;
-                border-right: 1px solid $color_gray_2;
-
-                &:last-of-type
-                {
-                    border-right: none;
-                    padding-right: 0;
-                }
-
-                .feed
-                {
-                    font-size: .625em;
-                    a
-                    {
-                        color: $link_color;
-                    }
-                }
-                .link
-                {
-                    img
-                    {
-
-                    }
-                }
-            }
         }
     }
 
@@ -114,14 +86,14 @@
             }
         }
 
-        .footer-nav
+        .footer-secondary-nav
         {
             ul
             {
                 @include flex();
                 li
                 {
-                    padding: 0 1em;
+                    padding: 0 .5em;
                     border-right: 1px solid $color_1;
 
                     &:last-of-type
@@ -150,6 +122,7 @@
             width: 100%;
             color: $color_gray_2;
             font-size: .625em;
+            padding: 1em 0;
         }
     }
 }

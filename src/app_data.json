@@ -139,6 +139,56 @@
 
     "footer": {
 
+        "social_feeds":[
+            {
+                "feed_type": "facebook",
+                "feed_logo": "images/facebook.jpg",
+                "feed_content": false
+            },
+            {
+                "feed_type": "twitter",
+                "feed_logo": "images/twitter.png",
+                "feed_content": "<a href='#'>@kimwrinkle</a> Thanks for the support!"
+            }
+        ],
+
+        "footer_main_nav": [
+            {
+                "title": "About Us",
+                "link": "/about-us"
+            },
+            {
+                "title": "Products",
+                "link": "/products"
+            },
+            {
+                "title": "Help Me Choose",
+                "link": "/help-me-choose"
+            },
+            {
+                "title": "Community",
+                "link": "/community"
+            },
+            {
+                "title": "Sitemap",
+                "link": "/sitemap"
+            },
+            {
+                "title": "Feedback",
+                "link": "/feedback"
+            }
+        ],
+
+        "footer_secondary_nav": [
+            {
+                "title": "Privacy Policy",
+                "link": "/privacy-policy"
+            },
+            {
+                "title": "Site Security",
+                "link": "/site-security"
+            }
+        ]
     },
 
     "pages": {

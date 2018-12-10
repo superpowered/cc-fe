@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.social-block
+{
+    @include flex();
+    align-items: center;
+    padding: 0 1em;
+    border-right: 1px solid $color_gray_2;
+
+    &:last-of-type
+    {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .feed
+    {
+        font-size: .625em;
+        a
+        {
+            color: $link_color;
+        }
+    }
+    .link
+    {
+        margin-left: .5em;
+        img
+        {
+
+        }
+    }
+}
