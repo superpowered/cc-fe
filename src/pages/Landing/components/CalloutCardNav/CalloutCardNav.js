@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import '../../../../styles/components/callout-card-holder.css'
+import './CalloutCardNav.css'
 
 import CalloutCard from './CalloutCard';
 

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import HeroSlider from './components/HeroSlider/HeroSlider';
 import CalloutCardNav from './components/CalloutCardNav/CalloutCardNav';
 
-import '../../styles/pages/landing.css';
+import './Landing.css';
 
 class Landing extends Component
 {

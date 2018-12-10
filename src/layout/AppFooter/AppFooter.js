@@ -53,7 +53,7 @@ class AppFooter extends Component
                         />
 
                         <div className="copyright">
-                            © 2009 BISSELL Homecare Inc. All Rights Reserved
+                            {this.props.footer_data.copyright_text}
                         </div>
 
                     </div>
