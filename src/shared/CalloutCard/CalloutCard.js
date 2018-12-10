@@ -1,51 +1,50 @@
 import React, {Component} from 'react';
 
+import './CalloutCard.css';
+
 class CalloutCard extends Component
 {
     render()
     {
-        const card = this.props.card;
-
-        if(!card)
-            return '';
+        const cardLink = this.props.link ? this.props.link : '#';
 
         let cardImage;
-        if(card.image)
+        if(this.props.image)
         {
             const imageStyle = {
-                backgroundImage: "url('"+card.image+"')"
+                backgroundImage: "url('"+this.props.image+"')"
             };
             cardImage = (
-                <a href={card.link}>
+                <a href={cardLink}>
                     <div className="card-image" style={imageStyle}>
-                        <img src={card.image} />
+                        <img src={this.props.image} />
                     </div>
                 </a>
             );
         }
 
         let cardList;
-        if(card.list)
+        if(this.props.list)
         {
             cardList = (
                 <ul className="card-link-list">
-                    {card.list.map((item,index)=><li key={index}><a href={item.link} className="arrow-button"><span>{item.title}</span></a></li>)}
+                    {this.props.list.map((item,index)=><li key={index}><a href={item.link} className="arrow-button"><span>{item.title}</span></a></li>)}
                 </ul>
             );
         }
 
         let cardPreview;
-        if(card.preview)
+        if(this.props.preview)
         {
             cardPreview = (
                 <div className="card-preview">
-                    <img src={card.preview.image} />
+                    <img src={this.props.preview.image} />
                     <div className="preview-text">
                         <h4>
-                            {card.preview.title}
+                            {this.props.preview.title}
                         </h4>
                         <p>
-                            {card.preview.text} <a href={card.link}>[more]</a>
+                            {this.props.preview.text} <a href={cardLink}>[more]</a>
                         </p>
                     </div>
                 </div>
@@ -57,8 +56,8 @@ class CalloutCard extends Component
         return (
             <article className="callout-card">
 
-                <a href={card.link}>
-                    <h3 className={card.short_title ? "short-title": ""} dangerouslySetInnerHTML={{__html:card.title}}>
+                <a href={cardLink}>
+                    <h3 className={this.props.short_title ? "card-title short-title": "card-title"} dangerouslySetInnerHTML={{__html: this.props.title }}>
                     </h3>
                 </a>
 

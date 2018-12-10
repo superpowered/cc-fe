@@ -1,10 +1,14 @@
 import React, {Component} from "react";
+import "./App.css";
 
+//CMS Data
 import app_data from './app_data.json';
 
+//Layout
 import AppHeader from "./layout/AppHeader/AppHeader";
 import AppFooter from "./layout/AppFooter/AppFooter";
 
+//Pages
 import Landing from "./pages/Landing/Landing";
 
 class App extends Component
@@ -23,6 +27,7 @@ class App extends Component
     componentDidMount()
     {
         //get some real data
+        //this.setState({app_data: data})
     }
 
     render()

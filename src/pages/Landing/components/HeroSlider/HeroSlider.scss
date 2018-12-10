@@ -8,12 +8,59 @@
     .hero-slider-nav
     {
         position: absolute;
-        display: none;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+        .hero-slider-arrow
+        {
+            &.prev
+            {
+
+            }
+            &.next
+            {
+
+            }
+        }
+
+        .hero-slider-dots
+        {
+            li
+            {
+                &.active
+                {
+
+                }
+
+                button
+                {
+
+                }
+
+                .slide-preview
+                {
+
+                    .title
+                    {
+
+                    }
+                    .image
+                    {
+                        img
+                        {
+
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .slider-track
     {
         position: relative;
+        z-index: 1;
     }
 
     .hero-slide

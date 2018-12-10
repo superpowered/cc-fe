@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import './CalloutCardNav.css'
 
-import CalloutCard from './CalloutCard';
+import CalloutCard from '../../../../shared/CalloutCard/CalloutCard';
 
 class CalloutCardNav extends Component
 {
@@ -16,7 +16,21 @@ class CalloutCardNav extends Component
             <div className="callout-card-nav">
                <div className="wrapper">
 
-                   {cards.map((card, index)=> <CalloutCard key={index} card={card}/>)}
+                   {
+                       cards.map((card, index)=>
+                       {
+                           return (
+                               <CalloutCard
+                                    key={index}
+                                    title={card.title}
+                                    image={card.image}
+                                    list={card.list}
+                                    preview={card.preview}
+                                    link={card.link}
+                               />
+                           );
+                       })
+                   }
 
                </div>
             </div>

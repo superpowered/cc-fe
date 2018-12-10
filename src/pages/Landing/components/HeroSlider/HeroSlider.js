@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './HeroSlider.css';
 
 import HeroSlide from './HeroSlide';
+import CalloutCard from '../../../../shared/CalloutCard/CalloutCard';
 
 class HeroSlider extends Component
 {
@@ -38,24 +39,17 @@ class HeroSlider extends Component
                         {
                             slides.map((slide, index)=>
                             {
-                                let image = null;
-                                if(slide.main_image)
-                                {
-                                    const imageStyle = {backgroundImage: "url('"+slide.main_image+"')"};
-                                    image = ( <div className="image" style={imageStyle}><img src={slide.main_image} /></div>);
-                                }
-
                                 return (
                                     <li key={index}>
                                         <button>
                                             {index}
                                         </button>
-                                        <div className="slide-preview">
-                                            <h3 className="title">
-                                                {slide.preview_title}
-                                            </h3>
-                                            {image}
-                                        </div>
+
+                                        <CalloutCard
+                                            title={slide.title}
+                                            image={slide.main_image}
+                                        />
+
                                     </li>
                                 );
                             })

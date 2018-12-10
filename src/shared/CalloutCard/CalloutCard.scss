@@ -1,0 +1,100 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.callout-card
+{
+    width: 9.5em;
+    padding: .75em;
+    background-color: $color_white_1;
+    margin: 1em;
+
+    .card-title
+    {
+        font-size: .85em;
+        text-transform: uppercase;
+        line-height: 1.25;
+        margin-bottom: .25em;
+
+        span
+        {
+            color: $color_1;
+            display: block;
+        }
+
+        &.short-title
+        {
+            padding-bottom: .25em;
+            border-bottom: 1px solid $color_gray_1;
+            margin-bottom: .5em;
+            span
+            {
+                display: inline-block;
+            }
+        }
+    }
+
+    .card-image
+    {
+        @include aspect-ratio(13,8);
+        background-size: cover;
+        background-position: center;
+        img
+        {
+            @include absolute-fill();
+            opacity: 0;
+            object-fit: cover;
+        }
+    }
+
+    .card-link-list
+    {
+        font-family: $font_2;
+        li
+        {
+            .arrow-button
+            {
+                font-size: 1em;
+                font-weight: bold;
+                color: $color_gray_3;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .card-preview
+    {
+        @include flex();
+        align-items: flex-start;
+        font-family: $font_2;
+        img
+        {
+            margin-right: .25em;
+        }
+        .preview-text
+        {
+            h4
+            {
+                font-size: .875em;
+                margin-bottom: .5em;
+            }
+            p
+            {
+                color: $color_gray_3;
+                font-size: .675em;
+                line-height: 1.25;
+                -ms-word-break: break-all;
+                word-break: break-all;
+                word-break: break-word;
+                -webkit-hyphens: auto;
+                -moz-hyphens: auto;
+                hyphens: auto;
+
+                a
+                {
+                    color: $color_1;
+                }
+            }
+        }
+    }
+}
