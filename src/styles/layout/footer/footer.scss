@@ -1,0 +1,155 @@
+@import "../../variables";
+@import "../../mixins";
+
+.app-footer
+{
+    > .wrapper
+    {
+        @include page-width-wrapper;
+    }
+
+    .footer-top
+    {
+        padding: 1em 0;
+        @include flex();
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color_gray_1;
+
+        .newsletter-signup
+        {
+            @include flex();
+            align-items: center;
+
+            h4
+            {
+                margin-right: 1em;
+                text-transform: uppercase;
+                font-size: .625em;
+                margin-bottom: 0;
+                margin-top: .25em;
+            }
+
+            input
+            {
+                border: 2px solid $color_1;
+                font-size: .625em;
+                padding: .35em .35em .25em .35em;
+                height: auto;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                outline: none;
+                min-width: 18em;
+                font-family: $font_2;
+            }
+            .arrow-button
+            {
+
+            }
+        }
+
+        .social-blocks
+        {
+            @include flex();
+            .social-block
+            {
+                @include flex();
+                padding: 0 1em;
+                border-right: 1px solid $color_gray_2;
+
+                &:last-of-type
+                {
+                    border-right: none;
+                    padding-right: 0;
+                }
+
+                .feed
+                {
+                    font-size: .625em;
+                    a
+                    {
+                        color: $link_color;
+                    }
+                }
+                .link
+                {
+                    img
+                    {
+
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom
+    {
+        padding: 1em 0;
+        @include flex();
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footer-nav
+        {
+            ul
+            {
+                @include flex();
+                li
+                {
+                    margin-right: 1em;
+                    a
+                    {
+                        display: block;
+                        font-size: .625em;
+                        font-weight: bold;
+                        color: $color_gray_2;
+                    }
+
+                    ul
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .footer-nav
+        {
+            ul
+            {
+                @include flex();
+                li
+                {
+                    padding: 0 1em;
+                    border-right: 1px solid $color_1;
+
+                    &:last-of-type
+                    {
+                        border-right: 0;
+                        padding-right: 0;
+                    }
+
+                    a
+                    {
+                        display: block;
+                        font-size: .625em;
+                        color: $color_1;
+                    }
+
+                    ul
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .copyright
+        {
+            width: 100%;
+            color: $color_gray_2;
+            font-size: .625em;
+        }
+    }
+}

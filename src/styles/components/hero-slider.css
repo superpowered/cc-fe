@@ -1,5 +1,6 @@
 .hero-slider {
-  position: relative; }
+  position: relative;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25); }
   .hero-slider .hero-slider-nav {
     position: absolute;
     display: none; }
