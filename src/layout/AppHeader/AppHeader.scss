@@ -182,9 +182,20 @@
                         background-color: rgba(255,255,255, .9);
                         @include transition();
 
-                        &.hovered
+                        &.hovered-item
                         {
                             background-color: rgba(255,255,255, 1);
+                            > ul
+                            {
+                                > li
+                                {
+                                    opacity: .5;
+                                    &.hovered
+                                    {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
                         }
 
                         ul
@@ -199,6 +210,7 @@
                                 text-align: center;
                                 width: 7.5em;
                                 position: relative;
+                                @include transition();
                                 a
                                 {
                                     font-size: .75em;
@@ -215,6 +227,21 @@
                                     left: 0;
                                     right: auto;
                                     width: auto;
+
+                                    &.hovered-item
+                                    {
+                                        > ul
+                                        {
+                                            > li
+                                            {
+                                                opacity: .5;
+                                                &.hovered
+                                                {
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                    }
 
                                     &:before,
                                     &:after

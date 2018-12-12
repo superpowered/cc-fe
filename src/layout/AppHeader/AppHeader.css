@@ -195,8 +195,12 @@
             -moz-transition: all 0.3s ease-in-out 0s;
             -o-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s; }
-            .app-main-head .main-head-nav > ul > li .sub-nav.hovered {
+            .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item {
               background-color: white; }
+              .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li {
+                opacity: .5; }
+                .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li.hovered {
+                  opacity: 1; }
             .app-main-head .main-head-nav > ul > li .sub-nav ul {
               width: 100%;
               max-width: 60rem;
@@ -222,7 +226,11 @@
                 border-bottom: .5em solid transparent;
                 text-align: center;
                 width: 7.5em;
-                position: relative; }
+                position: relative;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                -o-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s; }
                 .app-main-head .main-head-nav > ul > li .sub-nav ul li a {
                   font-size: .75em; }
                   .app-main-head .main-head-nav > ul > li .sub-nav ul li a img {
@@ -233,6 +241,10 @@
                   left: 0;
                   right: auto;
                   width: auto; }
+                  .app-main-head .main-head-nav > ul > li .sub-nav ul li .sub-nav.hovered-item > ul > li {
+                    opacity: .5; }
+                    .app-main-head .main-head-nav > ul > li .sub-nav ul li .sub-nav.hovered-item > ul > li.hovered {
+                      opacity: 1; }
                   .app-main-head .main-head-nav > ul > li .sub-nav ul li .sub-nav:before, .app-main-head .main-head-nav > ul > li .sub-nav ul li .sub-nav:after {
                     background: inherit;
                     content: '';
