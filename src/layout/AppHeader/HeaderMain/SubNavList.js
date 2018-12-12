@@ -10,6 +10,7 @@ class SubNavList extends Component
 
         this.state =
         {
+            hoveredItem: false,
             hoveredItems: []
         };
 
@@ -17,26 +18,13 @@ class SubNavList extends Component
     }
 
     //TODO: figure this out. SetStates are racing
-    hoverNavItem = (key) =>
+    hoverNavItem = () =>
     {
-        if(this.state.hoveredItems.indexOf(key) === -1)
-        {
-            this.setState({ hoveredItems: this.state.hoveredItems.concat(key) });
-        }
+        this.setState({ hoveredItem: true });
     };
-    unHoverNavItem = (key) =>
+    unHoverNavItem = () =>
     {
-        const index = this.state.hoveredItems.indexOf(key);
-        if(index !== -1)
-        {
-            const hoveredItems = this.state.hoveredItems.splice(1,index);
-            console.log(key,index,hoveredItems);
-            this.setState({ hoveredItems: hoveredItems});
-        }
-        else
-        {
-            alert(key);
-        }
+        this.setState({ hoveredItem: false });
     };
 
     makeSubNavItem = (item, index, arr) =>
@@ -55,13 +43,12 @@ class SubNavList extends Component
         return (
             <SubNavItem
                 key={key}
-                hoverNavItem={() => this.hoverNavItem(key) }
-                unHoverNavItem={() => {this.unHoverNavItem(key); console.log('unhov')} }
+                hoverNavItem={ this.hoverNavItem }
+                unHoverNavItem={ this.unHoverNavItem }
                 link={item.link}
                 image={item.image}
                 title={item.title}
                 subNav={subNav}
-                hovered={this.state.hoveredItems.indexOf(key) !== -1}
             />
         );
     };
@@ -69,7 +56,7 @@ class SubNavList extends Component
     render()
     {
         return (
-            <div className={this.state.hoveredItems.length ? "sub-nav hovered-item" : "sub-nav"}>
+            <div className={this.state.hoveredItem ? "sub-nav hovered-item" : "sub-nav"}>
                 <ul>
                     {this.props.nav_links.map(this.makeSubNavItem)}
                 </ul>

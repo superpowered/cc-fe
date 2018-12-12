@@ -189,7 +189,10 @@
                             {
                                 > li
                                 {
-                                    opacity: .5;
+                                    &:not(.hovered)
+                                    {
+                                        opacity: .5;
+                                    }
                                     &.hovered
                                     {
                                         opacity: 1;

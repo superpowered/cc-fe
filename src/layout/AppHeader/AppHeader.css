@@ -197,10 +197,10 @@
             transition: all 0.3s ease-in-out 0s; }
             .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item {
               background-color: white; }
-              .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li {
+              .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li:not(.hovered) {
                 opacity: .5; }
-                .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li.hovered {
-                  opacity: 1; }
+              .app-main-head .main-head-nav > ul > li .sub-nav.hovered-item > ul > li.hovered {
+                opacity: 1; }
             .app-main-head .main-head-nav > ul > li .sub-nav ul {
               width: 100%;
               max-width: 60rem;

@@ -2,11 +2,35 @@ import React, {Component} from 'react';
 
 class SubNavItem extends Component
 {
+
+    constructor(props)
+    {
+        super(props);
+
+        this.state =
+        {
+            hovered: false
+        };
+
+    }
+
+    handleMouseEnter = () =>
+    {
+        this.props.hoverNavItem();
+        this.setState({hovered: true});
+    };
+
+    handleMouseLeave = () =>
+    {
+        this.props.unHoverNavItem();
+        this.setState({hovered: false});
+    };
+
     render()
     {
         let className = 'sub-nav-item';
 
-        if(this.props.hovered)
+        if(this.state.hovered)
             className += ' hovered';
 
         let subNav = false;
@@ -14,7 +38,7 @@ class SubNavItem extends Component
         {
             className += ' has-sub-nav';
             subNav = (
-                <div className={this.props.hovered ? "sub-nav hovered-item" : "sub-nav"}>
+                <div className={this.state.hovered ? "sub-nav hovered-item" : "sub-nav"}>
                     <ul>
                         {this.props.subNav}
                     </ul>
@@ -25,8 +49,8 @@ class SubNavItem extends Component
         return (
             <li
                 className={className}
-                onMouseEnter={this.props.hoverNavItem}
-                onMouseLeave={this.props.unHoverNavItem}
+                onMouseEnter={this.handleMouseEnter}
+                onMouseLeave={this.handleMouseLeave}
             >
                 <a href={this.props.link}>
                     {
