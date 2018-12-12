@@ -3,8 +3,8 @@
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25); }
   .hero-slider .hero-slider-nav {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1em;
+    right: 0;
     width: 100%;
     z-index: 2; }
     .hero-slider .hero-slider-nav > .wrapper {
@@ -15,11 +15,13 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      align-items: center; }
       @media (max-width: 62rem) {
         .hero-slider .hero-slider-nav > .wrapper {
           margin-left: 1rem;
-          margin-right: 1rem; } }
+          margin-right: 1rem;
+          width: calc(100% - 2rem); } }
       .ua-ie-9 .hero-slider .hero-slider-nav > .wrapper:before, .ua-ie-8 .hero-slider .hero-slider-nav > .wrapper:before, .ua-ie-9 .hero-slider .hero-slider-nav > .wrapper:after, .ua-ie-8 .hero-slider .hero-slider-nav > .wrapper:after {
         content: " ";
         display: table; }
@@ -27,6 +29,25 @@
         clear: both; }
       .hero-slider .hero-slider-nav > .wrapper > * {
         float: left; }
+    .hero-slider .hero-slider-nav .hero-slider-arrow {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      background: none;
+      background: url("/images/arrow-icon.svg") top center;
+      background-size: contain;
+      height: 1em;
+      width: 1em;
+      color: transparent;
+      overflow: hidden;
+      margin: .25em; }
+      .hero-slider .hero-slider-nav .hero-slider-arrow.next {
+        transform: rotate(180deg);
+        transform-origin: center; }
     .hero-slider .hero-slider-nav .hero-slider-dots {
       display: -webkit-box;
       display: -webkit-flex;
@@ -140,7 +161,8 @@
       @media (max-width: 62rem) {
         .hero-slider .hero-slide > .wrapper {
           margin-left: 1rem;
-          margin-right: 1rem; } }
+          margin-right: 1rem;
+          width: calc(100% - 2rem); } }
       .hero-slider .hero-slide > .wrapper h4 {
         font-size: .875em;
         -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);

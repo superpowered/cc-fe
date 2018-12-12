@@ -9,7 +9,8 @@
   @media (max-width: 62rem) {
     .callout-card-nav > .wrapper {
       margin-left: 1rem;
-      margin-right: 1rem; } }
+      margin-right: 1rem;
+      width: calc(100% - 2rem); } }
   .ua-ie-9 .callout-card-nav > .wrapper:before, .ua-ie-8 .callout-card-nav > .wrapper:before, .ua-ie-9 .callout-card-nav > .wrapper:after, .ua-ie-8 .callout-card-nav > .wrapper:after {
     content: " ";
     display: table; }

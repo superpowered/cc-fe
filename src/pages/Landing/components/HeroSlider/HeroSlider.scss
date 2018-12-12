@@ -8,8 +8,8 @@
     .hero-slider-nav
     {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 1em;
+        right: 0;
         width: 100%;
         z-index: 2;
 
@@ -18,17 +18,29 @@
             @include page-width-wrapper;
             @include flex();
             justify-content: flex-end;
+            align-items: center;
         }
 
         .hero-slider-arrow
         {
+            @include strip-button-styles;
+            //noinspection CssUnknownTarget
+            background: url('/images/arrow-icon.svg') top center;
+            background-size: contain;
+            height: 1em;
+            width: 1em;
+            color: transparent;
+            overflow: hidden;
+            margin: .25em;
+
             &.prev
             {
 
             }
             &.next
             {
-
+                transform: rotate(180deg);
+                transform-origin: center;
             }
         }
 

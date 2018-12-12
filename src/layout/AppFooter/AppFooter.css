@@ -5,7 +5,8 @@
   @media (max-width: 62rem) {
     .app-footer > .wrapper {
       margin-left: 1rem;
-      margin-right: 1rem; } }
+      margin-right: 1rem;
+      width: calc(100% - 2rem); } }
 .app-footer .footer-top {
   padding: 1em 0;
   display: -webkit-box;
