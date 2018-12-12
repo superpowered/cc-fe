@@ -50,11 +50,11 @@
             li
             {
                 position: relative;
-                &.active
+                &.active-slide
                 {
                     button
                     {
-                        background-color: $color_1;
+                        background-color: $color_2;
                     }
                 }
 
@@ -137,7 +137,6 @@
         color: $color_white_1;
         opacity: 0;
 
-        &:first-of-type,
         &.active-slide
         {
             position: relative;

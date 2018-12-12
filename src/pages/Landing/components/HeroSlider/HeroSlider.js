@@ -14,9 +14,41 @@ class HeroSlider extends Component
         this.state =
         {
             activeSlide: 0
-        }
+        };
+        this.interval = null;
     }
 
+    componentDidMount = () =>
+    {
+        this.resetTimer();
+    };
+
+    nextSlide = () =>
+    {
+        let slide = this.state.activeSlide + 1;
+        if(slide >= this.props.slides.length)
+            slide = 0;
+
+        this.setState({activeSlide: slide});
+        this.resetTimer();
+    };
+
+    prevSlide = () =>
+    {
+        let slide = this.state.activeSlide - 1;
+        if(slide < 0)
+            slide = this.props.slides.length -1;
+
+        this.setState({activeSlide: slide});
+        this.resetTimer();
+    };
+
+    resetTimer = () =>
+    {
+        if(this.interval)
+            clearInterval(this.interval);
+        this.interval = setInterval(this.nextSlide, 5000);
+    };
 
     render()
     {
@@ -31,7 +63,7 @@ class HeroSlider extends Component
                 <nav className="hero-slider-nav">
 
                     <div className="wrapper">
-                        <button className="hero-slider-arrow prev">
+                        <button className="hero-slider-arrow prev" onClick={this.prevSlide} >
                             Prev
                         </button>
 
@@ -41,7 +73,7 @@ class HeroSlider extends Component
                                 slides.map((slide, index)=>
                                 {
                                     return (
-                                        <li key={index}>
+                                        <li key={index} className={index === this.state.activeSlide ? "active-slide" : ""}>
                                             <button>
                                                 {index}
                                             </button>
@@ -57,7 +89,7 @@ class HeroSlider extends Component
                             }
                         </ul>
 
-                        <button className="hero-slider-arrow next">
+                        <button className="hero-slider-arrow next" onClick={this.nextSlide}>
                             Next
                         </button>
                     </div>
@@ -66,7 +98,18 @@ class HeroSlider extends Component
 
                 <div className="slider-track">
 
-                    {slides.map((slide, index)=> <HeroSlide key={index} slide={slide}/>)}
+                    {
+                        slides.map((slide, index)=>
+                        {
+                            return (
+                                <HeroSlide
+                                    key={index}
+                                    slide={slide}
+                                    activeSlide={index === this.state.activeSlide}
+                                />
+                            );
+                        })
+                    }
 
                 </div>
 

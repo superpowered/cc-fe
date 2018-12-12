@@ -19,7 +19,7 @@ class HeroSlide extends Component
         }
 
         return (
-            <div className="hero-slide">
+            <div className={this.props.activeSlide ? "hero-slide active-slide" : "hero-slide"}>
 
                 {background}
 
