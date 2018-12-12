@@ -24,14 +24,17 @@
         .hero-slider-arrow
         {
             @include strip-button-styles;
-            //noinspection CssUnknownTarget
-            background: url('/images/arrow-icon.svg') top center;
-            background-size: contain;
             height: 1em;
             width: 1em;
             color: transparent;
             overflow: hidden;
             margin: .25em;
+            position: relative;
+
+            img
+            {
+                @include absolute-fill();
+            }
 
             &.prev
             {

@@ -38,13 +38,18 @@
       margin: 0;
       display: inline-block;
       background: none;
-      background: url("/images/arrow-icon.svg") top center;
-      background-size: contain;
       height: 1em;
       width: 1em;
       color: transparent;
       overflow: hidden;
-      margin: .25em; }
+      margin: .25em;
+      position: relative; }
+      .hero-slider .hero-slider-nav .hero-slider-arrow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
       .hero-slider .hero-slider-nav .hero-slider-arrow.next {
         transform: rotate(180deg);
         transform-origin: center; }

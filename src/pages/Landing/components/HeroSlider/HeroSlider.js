@@ -5,6 +5,8 @@ import './HeroSlider.css';
 import HeroSlide from './HeroSlide';
 import CalloutCard from '../../../../shared/CalloutCard/CalloutCard';
 
+import arrowIcon from '../../../../images/arrow-icon.svg';
+
 class HeroSlider extends Component
 {
     constructor(props)
@@ -73,7 +75,7 @@ class HeroSlider extends Component
 
                     <div className="wrapper">
                         <button className="hero-slider-arrow prev" onClick={this.prevSlide} >
-                            Prev
+                            <img src={arrowIcon} alt="Previous" />
                         </button>
 
                         <ul className="hero-slider-dots">
@@ -102,7 +104,7 @@ class HeroSlider extends Component
                         </ul>
 
                         <button className="hero-slider-arrow next" onClick={this.nextSlide}>
-                            Next
+                            <img src={arrowIcon} alt="Next" />
                         </button>
                     </div>
 
