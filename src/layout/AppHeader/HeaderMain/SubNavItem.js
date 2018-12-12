@@ -11,7 +11,6 @@ class SubNavItem extends Component
         {
             hovered: false
         };
-
     }
 
     handleMouseEnter = () =>
@@ -32,7 +31,7 @@ class SubNavItem extends Component
 
         if(this.state.hovered)
             className += ' hovered';
-        
+
         if(this.props.subNav)
             className += ' has-sub-nav';
 

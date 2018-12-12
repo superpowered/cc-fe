@@ -10,47 +10,29 @@ class SubNavList extends Component
 
         this.state =
         {
-            hoveredItem: false,
-            hoveredItems: []
+            hoveredItem: false
         };
-
-        this.levels = 0;
     }
 
-    //TODO: figure this out. SetStates are racing
     hoverNavItem = () =>
     {
         this.setState({ hoveredItem: true });
     };
+
     unHoverNavItem = () =>
     {
         this.setState({ hoveredItem: false });
     };
 
-    makeSubNavItem = (item, index, arr) =>
+    makeSubNavItem = (item, index) =>
     {
-        const key = this.levels + '-' + index;
         let subNav = false;
         if (item.sub_nav)
-        {
-            this.levels++;
-            /*subNav = (
-                <div className={this.state.hoveredItem ? "sub-nav hovered-item" : "sub-nav"}>
-                    <ul>
-                        {item.sub_nav.map(this.makeSubNavItem)}
-                    </ul>
-                </div>
-            );*/
-            subNav = (<SubNavList nav_links={item.sub_nav}/>);
-
-        }
-
-        if(index === arr.length - 1 && this.levels > 0)
-            this.levels--;
+            subNav = (<SubNavList nav_links={item.sub_nav} />);
 
         return (
             <SubNavItem
-                key={key}
+                key={index}
                 hoverNavItem={ this.hoverNavItem }
                 unHoverNavItem={ this.unHoverNavItem }
                 link={item.link}
