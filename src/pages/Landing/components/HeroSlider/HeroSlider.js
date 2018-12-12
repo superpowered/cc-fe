@@ -23,6 +23,15 @@ class HeroSlider extends Component
         this.resetTimer();
     };
 
+    goToSlide = (slide) =>
+    {
+        if(slide < 0 || slide > this.props.slides.length -1)
+            return;
+
+        this.setState({activeSlide: slide});
+        this.resetTimer();
+    };
+
     nextSlide = () =>
     {
         let slide = this.state.activeSlide + 1;
@@ -73,7 +82,10 @@ class HeroSlider extends Component
                                 slides.map((slide, index)=>
                                 {
                                     return (
-                                        <li key={index} className={index === this.state.activeSlide ? "active-slide" : ""}>
+                                        <li key={index}
+                                            className={index === this.state.activeSlide ? "active-slide" : ""}
+                                            onClick={()=>this.goToSlide(index)}
+                                        >
                                             <button>
                                                 {index}
                                             </button>
