@@ -34,7 +34,15 @@ class SubNavList extends Component
         if (item.sub_nav)
         {
             this.levels++;
-            subNav = item.sub_nav.map(this.makeSubNavItem);
+            /*subNav = (
+                <div className={this.state.hoveredItem ? "sub-nav hovered-item" : "sub-nav"}>
+                    <ul>
+                        {item.sub_nav.map(this.makeSubNavItem)}
+                    </ul>
+                </div>
+            );*/
+            subNav = (<SubNavList nav_links={item.sub_nav}/>);
+
         }
 
         if(index === arr.length - 1 && this.levels > 0)

@@ -32,19 +32,9 @@ class SubNavItem extends Component
 
         if(this.state.hovered)
             className += ' hovered';
-
-        let subNav = false;
+        
         if(this.props.subNav)
-        {
             className += ' has-sub-nav';
-            subNav = (
-                <div className={this.state.hovered ? "sub-nav hovered-item" : "sub-nav"}>
-                    <ul>
-                        {this.props.subNav}
-                    </ul>
-                </div>
-            );
-        }
 
         return (
             <li
@@ -59,7 +49,7 @@ class SubNavItem extends Component
                     }
                     {this.props.title}
                 </a>
-               {subNav}
+               {this.props.subNav}
            </li>
        );
     }
