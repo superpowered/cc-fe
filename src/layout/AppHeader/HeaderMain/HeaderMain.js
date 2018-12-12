@@ -4,6 +4,24 @@ import HeaderMainNav from './HeaderMainNav';
 
 class HeaderMain extends Component
 {
+
+    constructor(props)
+    {
+        super(props);
+
+        this.state =
+        {
+            whereToBuyActive: false
+        };
+    }
+
+    toggleWhereToBuy = (e) =>
+    {
+        e.preventDefault();
+        const active = this.state.whereToBuyActive;
+        this.setState({whereToBuyActive: !active});
+    };
+
     render()
     {
         return (
@@ -15,27 +33,27 @@ class HeaderMain extends Component
 
                     <HeaderMainNav nav_links={this.props.main_nav} />
 
-                    <div className="where-to-buy-block">
+                    <div className={this.state.whereToBuyActive ? "where-to-buy-block active" : "where-to-buy-block"}>
+                        <div className="wrapper">
+                            <nav className="">
+                                <a href="http://google.com/" onClick={this.toggleWhereToBuy}>
+                                    Where to Buy
+                                </a>
 
-                        <nav className="">
-                            <a href="#">
-                                Where to Buy
-                            </a>
+                                <a href="">
+                                    My Account
+                                </a>
+                            </nav>
 
-                            <a href="">
-                                My Account
-                            </a>
-                        </nav>
+                            <form className="where-to-buy-form">
 
-                        <form className="where-to-buy-form">
+                                <input type="search" name="zip-search" />
+                                <button className="arrow-button" type="submit" >
+                                    <span>Enter ZIP Code</span>
+                                </button>
 
-                            <input type="search" name="zip-search" />
-                            <button className="arrow-button" type="submit" >
-                                <span>Enter ZIP Code</span>
-                            </button>
-
-                        </form>
-
+                            </form>
+                        </div>
                     </div>
 
                 </div>

@@ -274,7 +274,24 @@
         }
         .where-to-buy-block
         {
-            align-self: flex-end;
+            align-self: stretch;
+            height: 100%;
+            overflow: hidden;
+
+            > .wrapper
+            {
+                transform: translateY(calc(100% - 1.75em));
+                @include transition();
+            }
+
+            &.active
+            {
+                > .wrapper
+                {
+                    transform: translateY(0);
+                }
+            }
+
             nav
             {
                 @include vertical-gradient($color_gray_1, $color_gray_2);
@@ -305,11 +322,10 @@
             }
             form
             {
-                height: 0;
-                overflow: hidden;
                 @include vertical-gradient($color_gray_3, $color_gray_4);
                 @include flex();
                 align-items: center;
+                padding: .5em;
 
                 input
                 {

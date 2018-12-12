@@ -261,7 +261,17 @@
               border-top: 1px solid #cccccc;
               margin-top: -1px; }
     .app-main-head .where-to-buy-block {
-      align-self: flex-end; }
+      align-self: stretch;
+      height: 100%;
+      overflow: hidden; }
+      .app-main-head .where-to-buy-block > .wrapper {
+        transform: translateY(calc(100% - 1.75em));
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      .app-main-head .where-to-buy-block.active > .wrapper {
+        transform: translateY(0); }
       .app-main-head .where-to-buy-block nav {
         background: #cccccc;
         /* Old browsers */
@@ -311,8 +321,6 @@
           .app-main-head .where-to-buy-block nav a:nth-of-type(2) {
             border-left: 1px solid rgba(255, 255, 255, 0.25); }
       .app-main-head .where-to-buy-block form {
-        height: 0;
-        overflow: hidden;
         background: #707070;
         /* Old browsers */
         background: -moz-linear-gradient(top, #707070 0%, #505050 100%);
@@ -327,7 +335,8 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        padding: .5em; }
         .ua-ie-9 .app-main-head .where-to-buy-block form:before, .ua-ie-8 .app-main-head .where-to-buy-block form:before, .ua-ie-9 .app-main-head .where-to-buy-block form:after, .ua-ie-8 .app-main-head .where-to-buy-block form:after {
           content: " ";
           display: table; }
